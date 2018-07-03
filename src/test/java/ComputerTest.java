@@ -13,8 +13,8 @@ public class ComputerTest {
     @Before
     public void before() {
         monitor = new Monitor(22, 786432);
-        computer = new Computer(8, 512, monitor, keyboard);
         keyboard = new Keyboard("Wireless", 101);
+        computer = new Computer(8, 512, monitor, keyboard);
     }
 
     @Test
@@ -69,6 +69,6 @@ public class ComputerTest {
 
     @Test
     public void canInputData() {
-        assertEquals("Wireless Keyboard is being used", keyboard.inputData("Wireless Keyboard"));
+        assertEquals("Wireless Keyboard is being used", computer.inputData("Wireless Keyboard"));
     }
 }

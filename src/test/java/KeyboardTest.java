@@ -17,4 +17,6 @@ public class KeyboardTest {
         assertEquals("Wireless", keyboard.getType());
     }
 
+    @Test
+    public void hasNoOfKeys() { assertEquals(101, keyboard.getNoOfKeys());}
 }

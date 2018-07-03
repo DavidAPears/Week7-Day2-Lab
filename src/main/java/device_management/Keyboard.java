@@ -16,8 +16,7 @@ public class Keyboard implements IInput {
     public int getNoOfKeys() { return this.noOfKeys; }
 
 
-//    @Override
     public String inputData(String data) {
-        return null;
+        return data + " is being used";
     }
 }
