@@ -9,11 +9,13 @@ public class ComputerTest {
     Computer computer;
     Monitor monitor;
     Keyboard keyboard;
+    Mouse mouse;
 
     @Before
     public void before() {
         monitor = new Monitor(22, 786432);
         keyboard = new Keyboard("Wireless", 101);
+        mouse = new Mouse("Tracker Ball", 3);
         computer = new Computer(8, 512, monitor, keyboard);
     }
 
