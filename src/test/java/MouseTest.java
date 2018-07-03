@@ -19,6 +19,6 @@ public class MouseTest {
     }
 
     @Test
-    public void hasNoOfKeys() { assertEquals(3, mouse.getNoOfKeys());}
+    public void hasNoOfButtons() { assertEquals(3, mouse.getNoOfButtons());}
 }
 

@@ -1,6 +1,8 @@
 package device_management;
 
-public class Mouse {
+import Behaviours.IInput;
+
+public class Mouse implements IInput {
     private String type;
     private int noOfButtons;
 
@@ -12,7 +14,7 @@ public class Mouse {
 
     public String getType() { return this.type; }
 
-    public int getNoOfKeys() { return this.noOfButtons; }
+    public int getNoOfButtons() { return this.noOfButtons; }
 
 
     public String inputData(String data) {

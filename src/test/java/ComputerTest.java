@@ -13,9 +13,9 @@ public class ComputerTest {
 
     @Before
     public void before() {
+        mouse = new Mouse("Tracker Ball", 3);
         monitor = new Monitor(22, 786432);
         keyboard = new Keyboard("Wireless", 101);
-        mouse = new Mouse("Tracker Ball", 3);
         computer = new Computer(8, 512, monitor, keyboard);
     }
 
@@ -72,5 +72,12 @@ public class ComputerTest {
     @Test
     public void canInputData() {
         assertEquals("Wireless Keyboard is being used", computer.inputData("Wireless Keyboard"));
+    }
+
+    @Test
+    public void canSetInputDevice(){
+        Mouse mouse = new Mouse("Tracker Ball", 3);
+        computer.setInputDevice(mouse);
+        assertEquals("mousing: circle", computer.outputData("circle"));
     }
 }
